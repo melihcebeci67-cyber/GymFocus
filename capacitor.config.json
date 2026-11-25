@@ -1,0 +1,6 @@
+{
+  "appId": "com.evolution.homegym",
+  "appName": "Evolution Home Gym",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}
