@@ -15,7 +15,9 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
-      - uses: android-actions/setup-android@v3
+      - uses: android-actions/setup-android@v4
+        with:
+          packages: 'platform-tools'
       - run: npm install
       - run: npm run build
       - run: npx cap add android
@@ -25,3 +27,4 @@ jobs:
         with:
           name: evolution-home-gym-debug-apk
           path: android/app/build/outputs/apk/debug/app-debug.apk
+          
